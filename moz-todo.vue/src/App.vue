@@ -3,7 +3,7 @@
     <h1>To-Do list</h1>
     <ul>
       <li>
-        <to-do-item></to-do-item>
+        <to-do-item label="My ToDO Item"></to-do-item>
       </li>
     </ul>
    <!-- <img alt="Vue logo" src="./assets/logo.png">
