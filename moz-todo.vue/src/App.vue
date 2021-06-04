@@ -1,17 +1,31 @@
 <template>
   <div id="app">
     <h1>To-Do list</h1>
+    <ul>
+      <li>
+        <to-do-item></to-do-item>
+      </li>
+    </ul>
    <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> --><!-- esto es una componente que importamos en la segunda parte-->
   </div>
 </template>
 
-
+<!--Para que se renderice la componente hay que llamar al elemento correspondiente dentro de template.
+El nombre del elemento es igual pero poniendo - entre los espacios (kebab-case)-->
 
 
 
 
 <script>
+import ToDoItem from './components/ToDoItem.vue';
+
+export default { //hay que añadir el elemento components para registrarla
+  name: 'app',
+  components: {
+    ToDoItem
+  }
+};
 /*import HelloWorld from './components/HelloWorld.vue' //importamos el  helloworld que es una componente que hemos usado en el template
 
 export default { //exportamos la componente. Esto setea el nombre de la componente a App
