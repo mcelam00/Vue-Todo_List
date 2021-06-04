@@ -3,7 +3,7 @@
     <h1>To-Do list</h1>
     <ul>
       <li>
-        <to-do-item label="My ToDO Item" :checked= "isDone"></to-do-item> <!-- Para ligar el estado (atributo) del HTML con la propiedad que tenemos definida en la componente se usa la ligadura explicita que se expresa como v-bind: ó simplemente :  -->
+        <to-do-item label="My ToDO Item" :done= false ></to-do-item> <!-- Aqui ponemos la contraparte de la funcion data que sería el done con la ligadura para que se tome como un bolean y no como un string -->
       </li>
     </ul>
    <!-- <img alt="Vue logo" src="./assets/logo.png">
