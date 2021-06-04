@@ -18,8 +18,18 @@ para conseguir que sirva como un molde, como una clase para todas las distintas 
         props:{ //añadiremos dos propiedades con clave label y done
             label:{required: true, type: String}, //la primera propiedad es un objeto con dos propiedades, un boolean que indica si todas las instancias que se creen deben tener ese campo y la segunda el tipo de dato del campo
             done:{default: false, type: Boolean} //la primera es el valor por defecto porque como no es required obligatoriamente en caso de no pasarse se inicializa a falso
+        },
+    //Se settea en la propiedad done de arriba. Lo hacemos con la ligadura explicita que va a ligar la casilla de verificacion de HTML y el dato que hemos puesto
+        data() { //el elemento de datos de vue, es parte del modelo de la componente pero tengo que ligarlo con la casilla de verificacion para que cuando la marque se mantenga.
+            return {
+            isDone: this.done
+            };
         }
     };
+
+
+
+
 </script>
 
 

@@ -3,7 +3,7 @@
     <h1>To-Do list</h1>
     <ul>
       <li>
-        <to-do-item label="My ToDO Item"></to-do-item>
+        <to-do-item label="My ToDO Item" :checked= "isDone"></to-do-item> <!-- Para ligar el estado (atributo) del HTML con la propiedad que tenemos definida en la componente se usa la ligadura explicita que se expresa como v-bind: ó simplemente :  -->
       </li>
     </ul>
    <!-- <img alt="Vue logo" src="./assets/logo.png">
