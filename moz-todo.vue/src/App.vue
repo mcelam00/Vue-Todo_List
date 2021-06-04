@@ -3,7 +3,9 @@
     <h1>To-Do list</h1>
     <ul>
       <li>
-        <to-do-item label="My ToDO Item" :done= false ></to-do-item> <!-- Aqui ponemos la contraparte de la funcion data que sería el done con la ligadura para que se tome como un bolean y no como un string -->
+        <to-do-item label="My ToDO Itm" :done= "false" ></to-do-item> <!-- Aqui ponemos la contraparte de la funcion data() que sería el done (la segunda propiedad que se exporta, no el dato) con la ligadura delante para que sepa que la propiedad es un boolean y no un tipo String que es lo que aceptan los atriutos HTML unicamente -->
+        <to-do-item label="My ToDO Item Two" :done= "true" ></to-do-item> <!-- Así podemos ver los dos identificadores distintos que se generan con las herramientas de desarrollador -->
+
       </li>
     </ul>
    <!-- <img alt="Vue logo" src="./assets/logo.png">
